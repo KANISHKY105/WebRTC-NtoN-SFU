@@ -1,0 +1,17 @@
+# Create a container from the ubuntu image with a name (my-ubuntu-container)
+docker run -it --name my-ubuntu-container ubuntu:22.04
+
+
+# List all containers (including stopped ones)
+docker ps -a
+
+
+# Restart the container
+docker start my-ubuntu-container
+
+
+# Attach to running shell inside the container
+docker exec -it my-ubuntu-container /bin/bash
+
+# Built an imaage
+docker build -t myapp .

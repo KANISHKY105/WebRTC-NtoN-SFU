@@ -1,0 +1,25 @@
+{
+  "name": "webrtc",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon app.js",
+    "watch": "browserify public/index.js -o public/bundle.js -v"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "browserify": "^17.0.0",
+    "dotenv": "^16.4.5",
+    "express": "^4.18.3",
+    "https": "^1.0.0",
+    "mediasoup": "^3.13.24",
+    "mediasoup-client": "^3.7.6",
+    "socket.io": "^4.7.5",
+    "socket.io-client": "^4.7.5",
+    "watchify": "^4.0.0"
+  }
+}

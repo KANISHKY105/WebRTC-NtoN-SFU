@@ -1,0 +1,16 @@
+version: "3"
+
+services:
+  kaitheone:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    container_name: kaitheone-Container
+    image: ubuntu
+    restart: "always"
+    tty: true
+    ports:
+      - "3000:3000"
+      - "2000-2020:2000-2020"
+    volumes:
+      - "C:/Users/kanis/Desktop/myRTC:/usr/src/app"
